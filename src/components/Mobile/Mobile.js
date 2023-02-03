@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './Mobile.css'
 
 const Mobile = () => {
@@ -6,8 +6,13 @@ const Mobile = () => {
     const [batteryLevel, setBatteryLevel] = useState(100);
 
     const batteryDown = () => {
-        const newLevel = batteryLevel - 10;
-        setBatteryLevel(newLevel);
+        if (batteryLevel > 0) {
+            const newLevel = batteryLevel - 10;
+            setBatteryLevel(newLevel);
+        }
+        else {
+            alert('battery dead. put it on charge')
+        }
     }
 
     return (
