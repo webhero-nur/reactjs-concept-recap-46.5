@@ -1,16 +1,18 @@
 import './App.css';
 import Blog from './components/Blog/Blog';
 import Mobile from './components/Mobile/Mobile';
+import Todos from './components/Todos/Todos';
 
 function App() {
-  const [newHeading, newAuthor] = ['No shortcut to success', 'Sharon']
+  const [newHeading, newAuthor] = ['No shortcut to success', 'Sharon'];
   return (
     <div className="App">
-      <Article></Article>
-      {/* <Blog heading='My Tour Blog' author='MySelf'></Blog>
-      <Blog heading='Experience of ePassport' author='Mr. Alex'></Blog> */}
-      <Blog heading={newHeading} author={newAuthor}></Blog>
+      <Todos></Todos>
       <Mobile></Mobile>
+      <Blog heading='My Tour Blog' author='MySelf'></Blog>
+      <Blog heading='Experience of ePassport' author='Mr. Alex'></Blog>
+      <Blog heading={newHeading} author={newAuthor}></Blog>
+      <Article></Article>
     </div>
   );
 }

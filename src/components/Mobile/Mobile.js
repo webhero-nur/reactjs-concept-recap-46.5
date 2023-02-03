@@ -11,7 +11,7 @@ const Mobile = () => {
             setBatteryLevel(newLevel);
         }
         else {
-            alert('battery dead. put it on charge')
+            alert('battery empty. put it on charge')
         }
     }
 
