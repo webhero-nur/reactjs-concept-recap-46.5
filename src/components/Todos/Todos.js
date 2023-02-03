@@ -9,12 +9,13 @@ const Todos = () => {
         fetch('https://jsonplaceholder.typicode.com/todos')
             .then(res => res.json())
             .then(data => setTodos(data))
+            .catch(err => console.log(err))
     }, [])
 
     return (
         <div>
             <table>
-                <caption style={{ fontSize: '50px' }}>Todo List</caption>
+                <caption style={{ fontSize: '50px' }}>Todo List: {todos.length}</caption>
                 <thead>
                     <tr>
                         <th>ID</th>

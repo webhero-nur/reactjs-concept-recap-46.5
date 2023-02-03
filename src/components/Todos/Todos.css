@@ -4,6 +4,8 @@ table {
 
 th {
     padding: 5px 10px;
+    background-color: blue;
+    color: whitesmoke;
 }
 
 table,
