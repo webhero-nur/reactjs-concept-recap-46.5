@@ -1,9 +1,13 @@
 import './App.css';
+import Blog from './components/Blog/Blog';
 
 function App() {
   return (
     <div className="App">
       <Article></Article>
+      <Blog></Blog>
+      <Blog></Blog>
+      <Blog></Blog>
     </div>
   );
 }
@@ -21,7 +25,7 @@ function Article() {
   return (
     <div>
       <article className='blog'>
-        <h2 style={titleStyle}>Title: </h2>
+        <h2 style={titleStyle}>Article</h2>
         <p style={{ fontWeight: '900' }}>This is Bunny. He was funny. He likes honey.This is Bunny. He was funny. He likes honey.This is Bunny. He was funny. He likes honey.This is Bunny. He was funny. He likes honey.This is Bunny. He was funny. He likes honey. </p>
       </article>
     </div>
