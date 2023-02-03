@@ -13,9 +13,25 @@ const Todos = () => {
 
     return (
         <div>
-            {
-                todos.map(todo => <Todo title={todo.title}></Todo>)
-            }
+            <table>
+                <caption style={{ fontSize: '50px' }}>Todo List</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>UserId</th>
+                        <th>Completed</th>
+                        <th>Title</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        todos.map(todo => <Todo
+                            todo={todo}
+                            key={todo.id}
+                        ></Todo>)
+                    }
+                </tbody>
+            </table>
         </div>
     )
 }

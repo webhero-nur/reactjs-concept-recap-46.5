@@ -1,10 +1,17 @@
 import React from 'react';
+import './Todo.css'
 
-const Todo = (props) => {
+const Todo = ({ todo }) => {
+    console.log(todo);
+    const { id, userId, completed, title } = todo;
+
     return (
-        <div>
-            <p style={{ backgroundColor: 'cyan', padding: '5px' }}>Title: {props.title}</p>
-        </div>
+        <tr>
+            <td>{id}</td>
+            <td>{userId}</td>
+            <td>{completed.toString()}</td>
+            <td>{title}</td>
+        </tr>
     )
 }
 
