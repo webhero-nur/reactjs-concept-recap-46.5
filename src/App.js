@@ -1,14 +1,16 @@
 import './App.css';
 import Blog from './components/Blog/Blog';
+import Mobile from './components/Mobile/Mobile';
 
 function App() {
   const [newHeading, newAuthor] = ['No shortcut to success', 'Billi Sharon']
   return (
     <div className="App">
-      <Article></Article>
+      {/* <Article></Article> */}
       <Blog heading='My Sundarban Blog' author='MySelf'></Blog>
       <Blog heading='Experience of ePassport in BD' author='Mr. Alief Hossain'></Blog>
       <Blog heading={newHeading} author={newAuthor}></Blog>
+      <Mobile></Mobile>
     </div>
   );
 }
