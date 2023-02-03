@@ -9,11 +9,20 @@ function App() {
 }
 
 function Article() {
+
+  const titleStyle = {
+    color: 'Blue',
+    backgroundColor: 'yellow',
+    textDecoration: 'underline',
+    borderRadius: '10px',
+    padding: '5px'
+  }
+
   return (
     <div>
       <article className='blog'>
-        <h1>Title: </h1>
-        <p>Body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita labore similique rerum alias suscipit quam nihil officia! Debitis reprehenderit dolor accusantium odio pariatur provident, ullam fuga suscipit excepturi cupiditate incidunt, optio maiores esse vel quos voluptas iusto voluptatibus, earum ut porro dolorem? Obcaecati tenetur, consequuntur culpa earum beatae debitis.</p>
+        <h2 style={titleStyle}>Title: </h2>
+        <p>Body: This is Bunny. He was funny. He likes honey.This is Bunny. He was funny. He likes honey.This is Bunny. He was funny. He likes honey.This is Bunny. He was funny. He likes honey.This is Bunny. He was funny. He likes honey.</p>
       </article>
     </div>
   )
